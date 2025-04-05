@@ -14,6 +14,14 @@ public class RotaController {
     @Autowired
     private RotasService service;
 
+    public RotasService getService() {
+        return service;
+    }
+
+    public void setService(RotasService service) {
+        this.service = service;
+    }
+
     @GetMapping
     public List<Rota> get(){
         return service.findAll();
