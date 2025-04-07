@@ -19,6 +19,7 @@ public class Rota {
 
     public static Rota addRota( Rota rota){
         rotas.add(rota);
+        rota.controleId();
         return rota;
     }
     public static List<Rota> getRotas(){

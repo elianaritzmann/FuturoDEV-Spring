@@ -16,11 +16,12 @@ public class Coletor {
     }
     public static Coletor addColetor( Coletor coletor){
         coletores.add(coletor);
+        coletor.controleColetorId();
         return coletor;
     }
 
 
-    public void controleId(){
+    public void controleColetorId(){
         this.id= sequence++;
     }
 

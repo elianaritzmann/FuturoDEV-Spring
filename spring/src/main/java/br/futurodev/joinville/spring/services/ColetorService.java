@@ -1,10 +1,11 @@
 package br.futurodev.joinville.spring.services;
 
 import br.futurodev.joinville.spring.entidades.Coletor;
-import br.futurodev.joinville.spring.entidades.Rota;
+import org.springframework.stereotype.Service;
+
 
 import java.util.List;
-
+@Service
 public class ColetorService {
 
     public Coletor create(Coletor coletor){
